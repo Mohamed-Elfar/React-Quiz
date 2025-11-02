@@ -5,12 +5,14 @@ This is a small React quiz app created as a practice project to exercise React h
 The repository contains the app source in `src/` and quiz data in `data/questions.json`.
 
 What this project demonstrates
+
 - Using React with functional components
 - Managing more complex component state with `useReducer` (practice)
 - Fetching data from a local JSON file / simple API
 - Basic routing-less single page app built with Create React App
 
 Key packages used
+
 - `react`, `react-dom`, `react-scripts` — the Create React App toolchain and React itself.
 - `json-server` — an easy-to-run mock REST API used during development. The project includes a convenient npm script to serve `data/questions.json` as a REST endpoint at `http://localhost:8000`.
 
@@ -48,18 +50,22 @@ Steps to deploy:
 3. Vercel will detect the project. If necessary, set the build command to `npm run build` and the output directory to `build`.
 
 Notes about the included `vercel.json`
+
 - It uses `@vercel/static-build` to run the `build` step and deploy the `build` folder.
 - It adds a rewrite so that all routes fallback to `/index.html` (important for client-side routing in SPAs).
 
 Extra notes
+
 - The `json-server` dependency is included for local mock API use. It's not required in production on Vercel — Vercel will host the static build only. If your deployed app depends on a live API, point it to a proper backend or remove the mock-data fetch in production.
 - The project is intentionally small and meant for learning; consider adding tests or CI as a next step.
 
 If you want, I can also:
+
 - Update `package.json` metadata (name/version) to match the project folder.
 - Add short deployment instructions for GitHub Actions or other CI.
 
 ---
+
 Last verified: November 2, 2025
 
 # Getting Started with Create React App
